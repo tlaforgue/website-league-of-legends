@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { withBase } from '../../utils/urls';
+
+// Génère une page statique pour chaque fichier Markdown du dossier jungle-guides
+export async function getStaticPaths() {
+  const guides = await getCollection('jungle-guides');
+  return guides.map((guide) => ({
+    params: { id: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+---
+
+<Layout title={guide.data.title} description={guide.data.description}>
+  <article class="guide-article">
+    <a href={withBase('/guides')} class="back-link">← Retour aux guides</a>
+    <p class="chip">Principes & Guides</p>
+    <h1>{guide.data.title}</h1>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .guide-article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-4);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-3);
+  }
+
+  .back-link:hover {
+    color: var(--accent-blue);
+  }
+
+  .guide-article h1 {
+    margin: var(--space-2) 0 var(--space-4);
+  }
+</style>

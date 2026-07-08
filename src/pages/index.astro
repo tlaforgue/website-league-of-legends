@@ -1,17 +1,219 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import { withBase } from '../utils/urls';
+import { getCollection } from 'astro:content';
 
+const guides = await getCollection('jungle-guides');
+const champions = await getCollection('champions');
+
+type RecentItem = {
+  title: string;
+  href: string;
+  theme: 'blue' | 'red';
+  date: Date;
+};
+
+// On fusionne les deux collections pour en tirer les ajouts les plus récents,
+// en ignorant les entrées sans updatedDate renseignée (on ne peut pas les trier).
+const recentItems: RecentItem[] = [
+  ...guides
+    .filter((g) => g.data.updatedDate)
+    .map((g) => ({
+      title: g.data.title,
+      href: withBase(`/guides/${g.id}`),
+      theme: 'blue' as const,
+      date: g.data.updatedDate as Date,
+    })),
+  ...champions
+    .filter((c) => c.data.updatedDate)
+    .map((c) => ({
+      title: c.data.name,
+      href: withBase(`/champions/${c.id}`),
+      theme: 'red' as const,
+      date: c.data.updatedDate as Date,
+    })),
+]
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
+  .slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Accueil">
+  <section class="hero" id="hero">
+    <div class="hero__fog" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="chip">Coach personnel — Rôle Jungle</p>
+      <h1 class="hero__title">Maîtrise la jungle,<br />camp après camp.</h1>
+      <p class="hero__subtitle">
+        Principes, timings et guides par champion, condensés à partir de mes
+        propres notes de jeu.
+      </p>
+    </div>
+  </section>
+
+  <section class="camps">
+    <a href={withBase('/guides')} class="card card--jungle camps__card">
+      <p class="chip">Camp Bleu · {guides.length} guide{guides.length > 1 ? 's' : ''}</p>
+      <h2>Principes & Guides</h2>
+      <p>Pathing, macro, gestion de camp, lecture de la carte.</p>
+    </a>
+
+    <a href={withBase('/champions')} class="card card--champion camps__card">
+      <p class="chip">Camp Rouge · {champions.length} champion{champions.length > 1 ? 's' : ''}</p>
+      <h2>Guides par champion</h2>
+      <p>Builds, combos et timings spécifiques à chaque jungler.</p>
+    </a>
+  </section>
+
+  {recentItems.length > 0 && (
+    <section class="recent">
+      <h2 class="recent__title">Derniers ajouts</h2>
+      <ul class="recent__list">
+        {recentItems.map((item) => (
+          <li>
+            
+            <a href={item.href}
+              class:list={[
+                'recent__link',
+                item.theme === 'blue' && 'recent__link--blue',
+                item.theme === 'red' && 'recent__link--red',
+              ]}
+            >
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Layout>
+
+<style>
+    .hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+    padding: var(--space-4);
+  }
+
+  /* Texture de fond : grille de points, évoquant une minimap */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-image: radial-gradient(var(--accent-blue) 1px, transparent 1px);
+    background-size: 28px 28px;
+    opacity: 0.12;
+  }
+
+  /* Le voile de brouillard : un trou de lumière qui suit le curseur
+     (--mx/--my sont mis à jour en JS ; valeurs par défaut = centre-haut) */
+  .hero__fog {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(
+      circle 320px at var(--mx, 50%) var(--my, 30%),
+      transparent 0%,
+      rgba(10, 15, 13, 0.55) 45%,
+      var(--bg-void) 75%
+    );
+  }
+
+  .hero__content {
+    max-width: 640px;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: var(--space-2) 0;
+  }
+
+  .hero__subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+
+  .camps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-4);
+  }
+
+  .camps__card {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .camps__card h2 {
+    font-size: 1.3rem;
+  }
+
+  .camps__card p:last-child {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 640px) {
+    .camps {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      min-height: auto;
+      padding: var(--space-6) var(--space-3);
+    }
+  }
+
+  .recent {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 var(--space-4) var(--space-6);
+    text-align: center;
+  }
+
+  .recent__title {
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+  }
+
+  .recent__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .recent__link {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+  }
+
+  .recent__link--blue {
+    color: var(--accent-blue);
+  }
+
+  .recent__link--red {
+    color: var(--accent-red);
+  }
+
+  @media (max-width: 640px) {
+    .hero {
+      min-height: auto;
+      padding: var(--space-6) var(--space-3);
+    }
+  }
+</style>

@@ -1,0 +1,164 @@
+/* src/styles/global.css */
+@import '@fontsource/chakra-petch/500.css';
+@import '@fontsource/chakra-petch/700.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-red);
+}
+
+/* Focus clavier toujours visible : essentiel pour l'accessibilité,
+   on ne le supprime jamais même si on le restyle. */
+:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 3px;
+}
+
+/* Composant réutilisable : badge façon "timer de camp" */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+/* Composant réutilisable : carte de contenu (guide, champion) */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  transition: border-color var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Variante de carte selon la thématique de la section */
+.card--jungle:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 24px var(--accent-blue-glow);
+}
+
+.card--champion:hover {
+  border-color: var(--accent-red);
+  box-shadow: 0 0 24px var(--accent-red-glow);
+}
+
+/* Styles de lecture pour le contenu Markdown rendu (guides, champions) */
+.prose {
+  font-size: 1.05rem;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  margin: var(--space-4) 0 var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--accent-blue);
+}
+
+.prose h3 {
+  font-size: 1.2rem;
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+.prose p {
+  margin-bottom: var(--space-2);
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 var(--space-2) var(--space-3);
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  background: var(--bg-surface);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.prose pre {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  overflow-x: auto;
+  margin-bottom: var(--space-2);
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--accent-blue);
+  padding-left: var(--space-2);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+
+/* Surcharge du thème "prose" pour les pages champion (Camp Rouge) */
+.champion-article .prose h2 {
+  border-bottom-color: var(--accent-red);
+}
+
+.champion-article .prose blockquote {
+  border-left-color: var(--accent-red);
+}
+
+.champion-article .prose a {
+  color: var(--accent-red);
+}
+
+.champion-article .prose a:hover {
+  color: var(--accent-blue);
+}

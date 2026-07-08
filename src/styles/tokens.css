@@ -1,0 +1,52 @@
+/* src/styles/tokens.css
+   Design tokens centralisés : toute couleur/police/espacement du site
+   doit venir d'ici, jamais codé en dur ailleurs. */
+
+:root {
+  /* Couleurs de fond */
+  --bg-void: #0a0f0d;
+  --bg-surface: #121a17;
+  --bg-surface-hover: #182420;
+
+  /* Accents thématiques (Buff Bleu / Buff Rouge) */
+  --accent-blue: #4fd8c4;
+  --accent-blue-glow: rgba(79, 216, 196, 0.25);
+  --accent-red: #f2703c;
+  --accent-red-glow: rgba(242, 112, 60, 0.25);
+
+  /* Texte */
+  --text-primary: #e8ede9;
+  --text-muted: #8a9990;
+
+  /* Bordures */
+  --border-subtle: #1f2b26;
+
+  /* Typographie */
+  --font-display: 'Chakra Petch', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Échelle d'espacement (base 8px) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+
+  /* Rayons et transitions */
+  --radius: 8px;
+  --transition-fast: 150ms ease;
+  --transition-smooth: 300ms ease;
+}
+
+/* Respect des préférences d'accessibilité :
+   si l'utilisateur a désactivé les animations dans son OS,
+   on coupe toutes les transitions/animations du site. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

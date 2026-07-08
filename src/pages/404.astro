@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { withBase } from '../utils/urls';
+---
+
+<Layout title="Camp introuvable">
+  <section class="not-found">
+    <p class="chip">Erreur 404</p>
+    <h1>Ce camp n'existe pas.</h1>
+    <p>La page que tu cherches a peut-être été déplacée ou n'a jamais existé.</p>
+    <a href={withBase('/')} class="not-found__link">← Retour à la base</a>
+  </section>
+</Layout>
+
+<style>
+  .not-found {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+
+  .not-found__link {
+    margin-top: var(--space-2);
+    color: var(--accent-blue);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+  }
+</style>

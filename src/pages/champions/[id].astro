@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { withBase } from '../../utils/urls';
+
+export async function getStaticPaths() {
+  const champions = await getCollection('champions');
+  return champions.map((champion) => ({
+    params: { id: champion.id },
+    props: { champion },
+  }));
+}
+
+const { champion } = Astro.props;
+const { Content } = await render(champion);
+---
+
+<Layout title={champion.data.name}>
+  <article class="champion-article">
+    <a href={withBase('/champions')} class="back-link">← Retour aux champions</a>
+
+    <header class="champion-header">
+      <h1>{champion.data.name}</h1>
+      {champion.data.title && <p class="champion-header__title">{champion.data.title}</p>}
+      <div class="champion-header__meta">
+        {champion.data.difficulty && <span class="chip">{champion.data.difficulty}</span>}
+        {champion.data.damageType && <span class="chip">{champion.data.damageType}</span>}
+        {champion.data.tags.map((tag: string) => <span class="chip">{tag}</span>)}
+      </div>
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .champion-article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--space-4);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-3);
+  }
+
+  .back-link:hover {
+    color: var(--accent-red);
+  }
+
+  .champion-header {
+    margin-bottom: var(--space-4);
+  }
+
+  .champion-header__title {
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.25rem;
+  }
+
+  .champion-header__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin-top: var(--space-2);
+  }
+</style>

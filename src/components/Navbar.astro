@@ -1,0 +1,157 @@
+---
+// src/components/Navbar.astro
+import { withBase } from '../utils/urls';
+
+const links = [
+  { href: withBase('/'), label: 'Accueil' },
+  { href: withBase('/guides'), label: 'Principes & Guides', theme: 'blue' },
+  { href: withBase('/champions'), label: 'Champions', theme: 'red' },
+];
+
+// On détermine la page active pour la mettre en surbrillance
+const currentPath = Astro.url.pathname;
+---
+
+<header class="navbar">
+  <a href={withBase('/')} class="navbar__brand">Jungle Academy</a>
+
+  <button
+    class="navbar__toggle"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    id="nav-toggle"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="navbar__links" id="nav-links">
+    {links.map((link) => (
+      
+      <a  href={link.href}
+        class:list={[
+          'navbar__link',
+          link.theme === 'blue' && 'navbar__link--blue',
+          link.theme === 'red' && 'navbar__link--red',
+          currentPath === link.href && 'navbar__link--active',
+        ]}
+      >
+        {link.label}
+      </a>
+    ))}
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-4);
+    background: rgba(10, 15, 13, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .navbar__brand {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .navbar__brand:hover {
+    color: var(--text-primary); /* on ne veut pas l'effet de lien classique sur le logo */
+  }
+
+  .navbar__links {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .navbar__link {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+  }
+
+  .navbar__link--blue:hover,
+  .navbar__link--blue.navbar__link--active {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+  }
+
+  .navbar__link--red:hover,
+  .navbar__link--red.navbar__link--active {
+    color: var(--accent-red);
+    border-color: var(--accent-red);
+  }
+
+  .navbar__link:not(.navbar__link--blue):not(.navbar__link--red):hover,
+  .navbar__link:not(.navbar__link--blue):not(.navbar__link--red).navbar__link--active {
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+  }
+
+  /* Bouton hamburger, caché par défaut sur desktop */
+  .navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-1);
+  }
+
+  .navbar__toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+  }
+
+  /* Responsive : sous 768px, on bascule en menu mobile */
+  @media (max-width: 768px) {
+    .navbar__toggle {
+      display: flex;
+    }
+
+    .navbar__links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: var(--bg-surface);
+      padding: var(--space-3);
+      gap: var(--space-3);
+      border-bottom: 1px solid var(--border-subtle);
+      display: none;
+    }
+
+    .navbar__links.is-open {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  // Toggle du menu mobile, avec mise à jour de aria-expanded
+  // pour rester accessible au clavier et aux lecteurs d'écran.
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = links?.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(!!isOpen));
+  });
+</script>

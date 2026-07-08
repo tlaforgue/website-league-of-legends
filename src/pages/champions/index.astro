@@ -1,0 +1,77 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../utils/urls';
+
+const champions = await getCollection('champions');
+const sortedChampions = champions.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+
+<Layout
+  title="Champions"
+  description="Guides par champion : builds, combos et timings pour la jungle."
+>
+  <section class="page-header">
+    <p class="chip">Camp Rouge</p>
+    <h1>Guides par champion</h1>
+    <p>Sélectionne un champion pour voir son guide détaillé.</p>
+  </section>
+
+  <section class="champions-grid">
+    {sortedChampions.map((champion) => (
+      <a href={withBase(`/champions/${champion.id}`)} class="card card--champion champion-card">
+        <h2>{champion.data.name}</h2>
+        {champion.data.title && <p class="champion-card__title">{champion.data.title}</p>}
+        <div class="champion-card__meta">
+          {champion.data.difficulty && <span class="chip">{champion.data.difficulty}</span>}
+          {champion.data.damageType && <span class="chip">{champion.data.damageType}</span>}
+        </div>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-4) var(--space-4);
+    text-align: center;
+  }
+
+  .page-header h1 {
+    margin: var(--space-2) 0;
+  }
+
+  .page-header p:last-child {
+    color: var(--text-muted);
+  }
+
+  .champions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-3);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--space-3) var(--space-6);
+  }
+
+  .champion-card {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .champion-card__title {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .champion-card__meta {
+    display: flex;
+    gap: var(--space-1);
+    margin-top: var(--space-1);
+  }
+</style>

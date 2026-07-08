@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../utils/urls';
+
+const guides = await getCollection('jungle-guides');
+// Tri selon le champ "order" défini dans le frontmatter
+const sortedGuides = guides.sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout
+  title="Principes & Guides"
+  description="Pathing, macro, gestion de camp : les principes fondamentaux du rôle de jungle."
+>
+  <section class="page-header">
+    <p class="chip">Camp Bleu</p>
+    <h1>Principes & Guides jungle</h1>
+    <p>Les fondamentaux à maîtriser, indépendamment du champion joué.</p>
+  </section>
+
+  <section class="guides-grid">
+    {sortedGuides.map((guide) => (
+      <a href={withBase(`/guides/${guide.id}`)} class="card card--jungle guide-card">
+        <h2>{guide.data.title}</h2>
+        <p>{guide.data.description}</p>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .page-header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-4) var(--space-4);
+    text-align: center;
+  }
+
+  .page-header h1 {
+    margin: var(--space-2) 0;
+  }
+
+  .page-header p:last-child {
+    color: var(--text-muted);
+  }
+
+  .guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-3);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--space-3) var(--space-6);
+  }
+
+  .guide-card {
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .guide-card p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+</style>
