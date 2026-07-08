@@ -1,43 +1,81 @@
-# Astro Starter Kit: Minimal
+# Jungle Academy
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Site personnel pour progresser en jungle sur League of Legends. Construit avec [Astro](https://astro.build), alimenté par des notes en Markdown.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+🔗 **Site en ligne** : https://<ton-pseudo>.github.io/website-league-of-legends
 
-## 🚀 Project Structure
+## Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- [Astro](https://astro.build) — framework, Content Collections
+- CSS natif avec variables (pas de framework CSS)
+- Déploiement automatique via GitHub Actions → GitHub Pages
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Structure du projet
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+\`\`\`
+src/
+├── content/
+│   ├── jungle-guides/   # fichiers .md des guides généraux
+│   └── champions/       # fichiers .md des guides par champion
+├── content.config.ts    # schéma des collections (Zod)
+├── layouts/
+│   └── Layout.astro     # squelette commun (head, navbar)
+├── components/
+│   └── Navbar.astro
+├── pages/
+│   ├── index.astro
+│   ├── guides/
+│   │   ├── index.astro    # liste des guides
+│   │   └── [id].astro     # page de détail (générée par guide)
+│   └── champions/
+│       ├── index.astro
+│       └── [id].astro
+├── styles/
+│   ├── tokens.css        # couleurs, polices, espacements
+│   └── global.css        # reset, styles de base, .prose
+└── utils/
+    └── urls.ts            # gestion du "base" dans les liens internes
+\`\`\`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Ajouter un guide
 
-Any static assets, like images, can be placed in the `public/` directory.
+Créer un fichier dans \`src/content/jungle-guides/\`, par exemple \`mon-guide.md\` :
 
-## 🧞 Commands
+\`\`\`markdown
+---
+title: "Titre du guide"
+description: "Description courte, affichée dans la liste."
+order: 2
+updatedDate: 2026-07-08
+---
 
-All commands are run from the root of the project, from a terminal:
+Contenu du guide en Markdown.
+\`\`\`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Ajouter un champion
 
-## 👀 Want to learn more?
+Créer un fichier dans \`src/content/champions/\`, par exemple \`kayn.md\` :
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+\`\`\`markdown
+---
+name: "Kayn"
+title: "le Fléau écarlate"
+difficulty: "difficile"       # facile | moyen | difficile
+damageType: "mixte"           # physique | magique | mixte
+tags: ["assassin", "duelliste"]
+updatedDate: 2026-07-08
+---
+
+Contenu du guide en Markdown.
+\`\`\`
+
+Dans les deux cas : aucune modification de code nécessaire, la page apparaît automatiquement après le prochain build.
+
+## Développement local
+
+\`\`\`bash
+npm install
+npm run dev       # serveur de dev sur http://localhost:4321/website-league-of-legends
+npm run build     # build de production
+npm run preview   # prévisualiser le build localement
+\`\`\`
