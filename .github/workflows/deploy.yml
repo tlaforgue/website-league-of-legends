@@ -16,5 +16,16 @@ jobs:
     steps:
       - name: Checkout du dépôt
         uses: actions/checkout@v5
-      - name: Build et déploiement Astro
-        uses: withastro/action@v5
+      - name: Build et upload du site Astro
+        uses: withastro/action@v6
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Déploiement vers GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
