@@ -1,7 +1,7 @@
 ---
 title: "Les règles fondamentales du jungler"
 description: "Ward niveau 1, règles des 3 et 6 camps, règle des 25 secondes, timing du dragon, game plan et choix des ganks."
-order: 3
+order: 2
 updatedDate: 2026-11-01
 ---
 
