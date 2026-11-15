@@ -1,10 +1,13 @@
-# Fondamentaux du jungler : quoi travailler selon ton rang
-
-**Source :** [vidéo YouTube](https://www.youtube.com/watch?v=BwpWqRHi0uA) d'un coach de jungle (environ 13 ans de coaching, élèves de Silver à Diamond cités en exemple). Fiche rédigée à partir du transcript ; les timers de la vidéo sont ignorés.
-
-> **Note :** le transcript est automatique. J'ai corrigé les mots mal reconnus quand le sens était clair (ex. « Blisscrank » → Blitzcrank).
-
 ---
+title: "Fondamentaux du jungler par rang"
+description: "Quoi travailler selon ton rang, d'Iron à Challenger : système de tiers (Z, S, A+), définition des fondamentaux et checklist de revue de partie."
+order: 3
+updatedDate: 2026-11-15
+---
+
+Source : vidéo d'un coach de jungle (environ 13 ans de coaching) : https://www.youtube.com/watch?v=BwpWqRHi0uA
+
+Fiche rédigée à partir d'un transcript automatique : les mots mal reconnus ont été corrigés quand le sens était clair (ex. « Blisscrank » → Blitzcrank).
 
 ## Les 4 règles non négociables (à tous les rangs)
 
@@ -17,22 +20,18 @@
 
 Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 
-| Tier | Signification |
-|------|---------------|
-| **Z** | Le plus important, à travailler en permanence |
-| **S** | Priorité haute |
-| **A+** | À travailler une fois Z et S maîtrisés |
-| **A** | Important, mais après les précédents |
-| **B / C** | Peu utile, à ignorer ou presque |
+- **Z** : Le plus important, à travailler en permanence
+- **S** : Priorité haute
+- **A+** : À travailler une fois Z et S maîtrisés
+- **A** : Important, mais après les précédents
+- **B / C** : Peu utile, à ignorer ou presque
 
 **Règle d'ordre : on va toujours de Z à S, puis A+, puis A.** Si tu ne maîtrises pas encore un fondamental de tier supérieur, continue de le travailler avant de passer au suivant. **Travaille une seule chose à la fois**, de gauche à droite dans ce classement.
-
----
 
 ## Les fondamentaux expliqués
 
 - **Champion mastery (maîtrise du champion)** : connaître ses matchups, les limites de son champion, ses combos, esquiver les sorts, anticiper les menaces (ex. les hooks de Blitzcrank ou Thresh) et savoir quels combats prendre ou éviter.
-- **Clear efficiency (efficacité du clear)** : ne pas seulement clear vite, mais **être sur ses camps à l'heure où ils réapparaissent**. Règle des **25 secondes** : appuie sur B environ 25 secondes avant la réapparition des camps pour arriver pile à temps. Retarder ses camps de 30 secondes revient à rater une vague. Les kills seuls ne suffisent pas à carry ; c'est **camps + kills** qui fait le 1v9.
+- **Clear efficiency (efficacité du clear)** : ne pas seulement clear vite, mais **être sur ses camps à l'heure où ils réapparaissent**. Règle des **25 secondes** (voir aussi [Les règles fondamentales du jungler](regles-fondamentales-jungle)) : appuie sur B environ 25 secondes avant la réapparition des camps pour arriver pile à temps. Retarder ses camps de 30 secondes revient à rater une vague. Les kills seuls ne suffisent pas à carry ; c'est **camps + kills** qui fait le 1v9.
 - **Ganking** : savoir ganker proprement (regarder avant le gank, pendant le gank, comment le jouer).
 - **Base timers** : savoir quand rentrer en base pour dépenser son or, avoir ses power spikes d'objets et ne pas arriver en retard aux camps et aux objectifs. Critères : distance des camps, or disponible avant un objectif, nettoyer le côté faible avant le côté fort.
 - **Game plan** : savoir pour quel laner et quel objectif on joue. Cela permet d'ignorer le bruit (par exemple un laner qui ping et qui a mal joué).
@@ -43,20 +42,16 @@ Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 - **When to skip camps (quand sauter des camps)** : sauter un camp pour saisir une opportunité de gank (voir exemple en Diamond).
 - **Draft understanding** : connaître sa composition d'équipe (jouer lent ? flanquer ? etc.).
 
----
-
 ## Fondamentaux par rang
 
 ### Iron, Bronze, Silver
 
-| Tier | Fondamentaux |
-|------|--------------|
-| **Z** | Champion mastery (environ 80 % de ce qu'il faut travailler à ce niveau) |
-| **S** | Clear efficiency, ganking, base timers |
-| **A+** | Game plans |
-| **A** | Tempo, counting numbers, objectives understanding |
-| **B** | When to skip camps |
-| **C** | Draft understanding |
+- **Z** : Champion mastery (environ 80 % de ce qu'il faut travailler à ce niveau)
+- **S** : Clear efficiency, ganking, base timers
+- **A+** : Game plans
+- **A** : Tempo, counting numbers, objectives understanding
+- **B** : When to skip camps
+- **C** : Draft understanding
 
 **À retenir :**
 - Dans ces rangs, tout se résume à **être au bon endroit au bon moment avec de bons objets** pour prendre des combats avec un avantage d'items.
@@ -68,26 +63,22 @@ Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 
 ### Gold, Platinum
 
-| Tier | Fondamentaux |
-|------|--------------|
-| **Z** | Champion mastery (revoir son micro, utiliser un programme de replay) |
-| **S** | Clear efficiency, ganking, base timers |
-| **A+** | Game plans, **jungle tracking** (nouveau) |
-| **A** | Counting numbers, tempo, objectives understanding |
-| **B** | When to skip camps (full clear suffit, pas d'invade) |
-| **C** | Draft understanding |
+- **Z** : Champion mastery (revoir son micro, utiliser un programme de replay)
+- **S** : Clear efficiency, ganking, base timers
+- **A+** : Game plans, **jungle tracking** (nouveau)
+- **A** : Counting numbers, tempo, objectives understanding
+- **B** : When to skip camps (full clear suffit, pas d'invade)
+- **C** : Draft understanding
 
 **Ce qui change :** les joueurs ont maintenant plus de conscience de la minimap, donc le jungle tracking devient utile pour **conserver** ton avance. Si tu te fais outnumber et que tu prends un combat dans la rivière, tu perds. Si les objectifs ne sont pas un point faible, ne les travaille pas en priorité.
 
 ### Emerald (« l'Elo Hell »)
 
-| Tier | Fondamentaux |
-|------|--------------|
-| **Z** | Champion mastery |
-| **S** | Clear efficiency, counting numbers, tempo, base timers |
-| **A+** | Ganking, jungle tracking, game plans, objectives understanding |
-| **A** | When to skip camps |
-| **B** | Draft understanding |
+- **Z** : Champion mastery
+- **S** : Clear efficiency, counting numbers, tempo, base timers
+- **A+** : Ganking, jungle tracking, game plans, objectives understanding
+- **A** : When to skip camps
+- **B** : Draft understanding
 
 **À retenir :**
 - **Règle des 25 secondes** : sois toujours à l'heure sur tes camps. Cela garde ton avance en CS et t'évite de faire des plays au hasard : si tu rates la règle, il faut que le play soit sûr à 100 %.
@@ -100,12 +91,10 @@ Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 
 ### Diamond
 
-| Tier | Fondamentaux |
-|------|--------------|
-| **Z** | Champion mastery |
-| **S** | Clear efficiency, counting numbers, tempo, base timers |
-| **A+** | Jungle tracking, game plans, ganking, **when to skip camps** (monte d'un cran), objectives understanding |
-| **A** | Draft understanding |
+- **Z** : Champion mastery
+- **S** : Clear efficiency, counting numbers, tempo, base timers
+- **A+** : Jungle tracking, game plans, ganking, **when to skip camps** (monte d'un cran), objectives understanding
+- **A** : Draft understanding
 
 **Exemple de skip camp :** tes laners sont morts et le laner ennemi doit pousser sa vague pour rentrer en base. Si tu as fini ton full clear et que tu peux prendre Gromp, **saute ce camp et gank le laner ennemi** : c'est la seule occasion de le tuer avant qu'il crash la vague et rentre. Même chose en mid et late game : avant un objectif, tu peux sauter ton dernier camp et synchroniser ton arrivée avec une vague.
 
@@ -113,11 +102,9 @@ Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 
 ### Master
 
-| Tier | Fondamentaux |
-|------|--------------|
-| **Z** | Champion mastery (« impossible de monter sans »), pas seulement les fondamentaux |
-| **S** | **Tempo, counting numbers, jungle tracking** (priorités de gauche à droite), puis objectives understanding, base timers, clear efficiency |
-| **A+** | Ganking, when to skip camps, game plans, **draft understanding** |
+- **Z** : Champion mastery (« impossible de monter sans »), pas seulement les fondamentaux
+- **S** : **Tempo, counting numbers, jungle tracking** (priorités de gauche à droite), puis objectives understanding, base timers, clear efficiency
+- **A+** : Ganking, when to skip camps, game plans, **draft understanding**
 
 **À retenir :**
 - **Counting numbers :** avant chaque combat, demande-toi si les laners ennemis manquent sur la carte. Fais-le systématiquement et ça devient une habitude.
@@ -132,21 +119,19 @@ Le coach classe chaque fondamental dans un tier qui indique sa priorité :
 - **A+ :** game plans, ganking, when to skip camps, draft understanding.
 - Plus on monte, plus il faut être bon **partout**. Il s'agit de passer chaque fondamental d'un niveau à un niveau supérieur (par exemple du niveau 20 au niveau 25) en construisant de la mémoire musculaire.
 
----
-
 ## Conclusion du coach
 
 - League of Legends est comme un jeu de combat : on construit des **habitudes**, qui sont les fondamentaux. Si on est bon en combat et sur les fondamentaux, on monte.
 - Pour la plupart des rangs, maîtriser **Z, S et A+** suffit.
 - Toujours **revoir ses parties** et **se fixer un objectif clair avant de commencer la journée**.
-- Le coach propose ses cours et un boot camp (vendus séparément) pour approfondir ; je ne les ai pas détaillés ici.
+- Le coach propose ses cours et un boot camp (vendus séparément) pour approfondir ; non détaillés ici.
 
 ## Checklist de revue de partie (résumé de la vidéo)
 
-- [ ] Ai-je été à l'heure sur mes camps (règle des 25 secondes) ?
-- [ ] Mes retours en base étaient-ils bien chronométrés (or dépensé, objets à temps) ?
-- [ ] Mes ganks suivaient-ils un game plan (lane qui gagne, camps prêts) ?
-- [ ] Avant mes morts, ai-je compté les numéros ?
-- [ ] Savais-je qui avait le tempo (moi, mes laners, l'ennemi) ?
-- [ ] Où était le jungler ennemi et mes laners étaient-ils prévenus ?
-- [ ] Ai-je bien joué mon champion (matchup, combos, esquives) ?
+- Ai-je été à l'heure sur mes camps (règle des 25 secondes) ?
+- Mes retours en base étaient-ils bien chronométrés (or dépensé, objets à temps) ?
+- Mes ganks suivaient-ils un game plan (lane qui gagne, camps prêts) ?
+- Avant mes morts, ai-je compté les numéros ?
+- Savais-je qui avait le tempo (moi, mes laners, l'ennemi) ?
+- Où était le jungler ennemi et mes laners étaient-ils prévenus ?
+- Ai-je bien joué mon champion (matchup, combos, esquives) ?
