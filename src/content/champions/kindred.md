@@ -4,7 +4,7 @@ title: "The Eternal Hunters"
 difficulty: "difficile"
 damageType: "physique"
 tags: ["marksman", "hyper-carry"]
-updatedDate: 2026-11-15
+updatedDate: 2026-11-17
 ---
 
 Source : vidéo d'un coach de jungle Challenger (6 saisons, ancien « Kindred one-trick »). Fiche rédigée à partir d'un transcript automatique, sans les timers ; les noms mal reconnus ont été corrigés quand le sens était clair. Le coach mentionne le buff de vitesse de clear du patch 26.20.
@@ -77,6 +77,77 @@ Il y a deux approches. La première, plus risquée, consiste à invade tôt pour
 - Un retour en base
 
 Exemple de deuxième clear : full clear, puis gank, puis Dragon une fois le kill ou le Flash obtenu, puis base. Cela te donne un maximum de farm tout en aidant tes laners, pour que ton équipe ne perde pas la partie avant que tu scales.
+
+## Invades (niveaux 2 et 3)
+
+Source : seconde vidéo d'un coach Kindred qui passe en revue les invades possibles (https://www.youtube.com/watch?v=mUz5Na3jJVA). Les routes exactes sont dessinées sur la carte dans la vidéo : ici, seul l'ordre des camps est repris. Les exemples sont donnés côté bleu ; côté rouge, les invades sont les mêmes, inversés.
+
+> Ce coach défend un style plus agressif que la section « Début de partie » ci-dessus, qui recommande un full clear. Les deux s'accordent sur l'essentiel : l'or et les marques. Invade avec de l'information, pas au hasard.
+
+### Quand invade
+
+- Tu as une ward sur les Raptors ennemis (très courant aujourd'hui) ou tu sais où le jungler ennemi a commencé.
+- Ta lane du côté visé gagne nettement. Pour les invades les plus risqués, un matchup à égalité ne suffit pas.
+- Un indice de matchup à bas MMR : un support mêlée avec engage contre un support à distance est probablement gagnant.
+- Selon le coach, ce n'est pas un « flip » si tu as l'information et l'avantage en 1v1 aux niveaux 2 et 3.
+
+### Invades niveau 2
+
+**Red puis camps ennemis (lane gagnante nécessaire).** Commence Red, puis entre chez l'ennemi par son côté bleu : tu te bats près de son Gromp s'il a commencé Blue, ou tu lui prends ses camps. C'est aussi un moyen rapide de poser une ward. Après l'invade, tu as trois options :
+
+- un gank niveau 3 ;
+- un recall (une épée plus une Control Ward, ou des bottes si la composition adverse est glissante ou à longue portée) ;
+- retourner une fois sur ton côté top, prendre tes Loups et défendre (l'ennemi n'a souvent pas de vision dessus).
+
+Choisis gank niveau 3 ou base, et ne retourne à tes propres camps que si la map est « split » (chaque jungler prend le côté de l'autre) : dans ce cas, prends son côté bot puis le tien, et joue les respawns.
+
+**Avec une ward sur ses Raptors et une bot lane très gagnante.** Commence Red, enchaîne tes Krugs, puis traverse la carte pour prendre son Gromp. Tu as gagné un niveau sur un camp, et tu cherches ensuite à le combattre sur les Loups ou à jouer son Blue avec ta bot lane. Ton mid peut rejoindre facilement.
+
+**Le « cheese » quand tu sais à 100 % où il commence.** Commence Blue, puis passe prendre son Red (pose une ward en chemin si tu n'en as pas), puis ses Krugs, puis recall, sauf si son top laner est en train de t'int. Personne ne s'y attend sans ward, et ça marche aussi sur Jarvan IV et d'autres champions. Le jungler ennemi se retrouve « sans maison » : quand il vérifie ses camps, tu es déjà en train de les prendre. Un jungler invadé doit réagir en jouant pour un camp, ce qui est mauvais pour la partie, surtout si un carry comme Kindred (ou Graves, ou un assassin) prend de l'or tôt.
+
+### Invade niveau 3 contre un jungler au clear rapide (exemple Zed)
+
+- Zed termine son full clear vers 2:50, et son départ Blue est encore plus rapide que son départ Red. Tu ne peux pas l'invade sur son Red en commençant Red : il aura presque fini.
+- Il faut commencer sur le côté opposé et l'invade de ce côté. Si tu es sûr de ton invade, prends une route qui te fait arriver sur son Red : après tes trois camps, il en aura fait quatre. Tu le combats sur le Red, tu le lui prends, tu le tues si possible, puis tu prends ses Krugs.
+- La même logique peut marcher contre Kha'Zix ou Rengar.
+- Ne te laisse pas abattre par un clear rapide : Zed est peu fort en combat. Son avantage est le tempo de camps (deux épées) et la possibilité de voler des camps ou le Dragon.
+
+### Invade niveau 3 classique
+
+Kindred est l'une des plus fortes du jeu au niveau 3 (son niveau 4 est assez banal) : elle saute les murs et son Q fait beaucoup de dégâts par rapport à un jungler de niveau 3 moyen.
+
+- **Route habituelle :** Red, Krugs, Raptors, puis invade soit son côté bot soit son côté top, selon le côté où il a commencé.
+- **Où le combattre :** sur son 4e camp, ou sur son buff.
+- **Repérer sa position :** longe le mur et jette un coup d'œil pour voir si le camp est déjà tiré.
+- **Il vient chez toi ?** S'il va sur tes Krugs, combats-le là : tu as l'effet de surprise.
+- **Variantes :** pose une ward et tire le Blue, ou prends son Gromp ensuite (quand tu le tues, il finit ses Loups). Tu peux aussi passer par-dessus les murs comme Talon, prendre ses Krugs, puis le combattre sur son Red.
+- **Résultat habituel :** un 1v1 ou un combat pour le camp suivant, ce qui convient à Kindred, qui adore les skirmishs.
+
+### Les marques pendant les invades
+
+- Après ton premier crabe (1re marque), la marque suivante est sur le crabe d'en haut ou sur les Raptors. Si vous recallez tous les deux après avoir commencé du même côté, tu peux courir directement vers là et le combattre si ta mid lane a la priorité.
+- Si vous avez fait des clears opposés (tu as commencé Blue, il a commencé Red), la marque suivante sera toujours sur les Raptors, puis sur le Gromp : tu peux courir vers ses Raptors.
+- Sans invade, tu peux simplement jouer son respawn de camps.
+- **Les meilleurs camps à jouer pour les marques :** le crabe et les Raptors. Le Gromp est difficile à jouer côté bleu (son jungler et son mid se connectent facilement pour défendre, seul le top laner peut te gêner) ; côté rouge, il est plus facile. En résumé : Gromp plus facile côté rouge, Raptors plus faciles côté bleu. Les Krugs, joue-les une fois passé 4 marques.
+
+### Poser sa ward
+
+Place ta ward de façon à voir les deux côtés (plutôt au milieu de la zone). Un jungler comme Volibear peut gank niveau 3 en passant à côté de toi pour aller sur ton top laner, donc tu dois savoir de quel côté il vient.
+
+### Si ton invade est vu, ou si on t'invade
+
+- Kindred ne perd presque contre personne, sauf si tu te bats au corps à corps sans utiliser ta portée, ou si l'ennemi a une ward sur ton chemin. Si tu penses qu'un buisson est warded, passe par un autre chemin (par-dessus les murs) : la plupart des joueurs wardent la fosse du Dragon ou du Baron, pas le buisson précis.
+- Contre un jungler qui peut aussi invade (Kindred, Graves...), le coach pose une ward à un endroit qui montre son chemin d'arrivée. L'ennemi ne l'esquive que s'il sait où elle est ou s'il « ghoste » (part sans être vu).
+- **Si tu vois l'invade arriver**, tu peux tuer le jungler ennemi ou ruiner sa partie. Il doit alors « doubler » : continuer à t'envoyer dans ta jungle, gank bot pour retourner la partie, ou retourner à ses camps. Attention : un jungler qui sait où tu es garde le tempo sur toi, peut jouer le premier play, voire t'invade plus tard.
+- **Si c'est ton invade qui est vu** (il t'attend sur son Gromp ou ses Loups), sois prêt à doubler. Il a peut-être encore son Smite : prends le Gromp, sauf si tu es en train de perdre (par exemple si son top laner vient te gap).
+- **Prévois toujours comment atteindre le niveau 3.** Il peut l'atteindre avant toi. Par exemple, côté rouge, tu devras manger tes Loups car ton Blue serait trop tard. S'il est niveau 3 et toi niveau 2, la partie devient difficile.
+
+### Conseils généraux
+
+- **Si tu peux choisir de te battre, fais-le :** Kindred est inutile sans 4 marques. Il faut les chercher en suivant les camps et en jouant les crabes, ce qui mène à des combats. Le full clear à chaque partie peut marcher, mais apprendre à invade t'apprend à te battre et à mieux jouer ton champion mécaniquement.
+- **Ne farme pas passivement toute la partie**, sauf si tu as vraiment les outils pour scaler.
+- **Ignore le niveau 4** pendant tes invades de niveaux 2 et 3 : pense seulement à tuer ou à repousser le jungler ennemi, puis à jouer pour les camps et le crabe.
+- **L'or d'abord :** avec des wards en début de partie et la position de départ du jungler adverse, un invade peut gagner la partie. Tu obtiens de l'or, donc des objets plus vite et des marques plus tôt. Plus tôt tu as ta première marque, plus vite tu enchaînes teamfights et skirmishs vers 4 marques et plus.
 
 ## Ganks
 
