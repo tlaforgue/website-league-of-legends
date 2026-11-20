@@ -1,9 +1,8 @@
-
 ---
 name: "Shyvana"
 title: "La demi-dragonne"
-difficulty: "moyenne"
-damageType: "hybride"
+difficulty: "facile"
+damageType: "mixte"
 tags: ["jungler", "bruiser", "farm", "scaling", "macro", "objectifs"]
 updatedDate: 2026-11-20
 ---
