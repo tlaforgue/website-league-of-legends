@@ -1,4 +1,3 @@
-
 ---
 name: "Shyvana"
 title: "La demi-dragonne"
@@ -16,7 +15,7 @@ Shyvana est une jungler de type **fighter / juggernaut**, orientée vers le farm
 
 Son gameplay repose sur trois piliers :
 
-- **Le tempo de farm :** enchaîner les camps efficacement pour accumuler de l'expérience, de l'or et préparer ses prochains timings.
+- **Le tempo de farm :** enchaîner les camps efficacement pour accumuler de l'expérience et de l'or.
 - **La gestion de la Fury :** préparer sa forme de dragon avant les combats importants.
 - **L'accès aux cibles :** engager au bon moment et rester suffisamment longtemps sur une cible pour exploiter ses dégâts.
 
@@ -24,17 +23,14 @@ Shyvana est particulièrement efficace lorsqu'elle peut enchaîner ses attaques 
 
 ## Conditions de victoire
 
-**Pour gagner avec Shyvana :**
-
 1. Réaliser des clears propres et réguliers.
 2. Atteindre le niveau 6 dans un timing correct.
 3. Préparer sa Fury avant les objectifs.
 4. Profiter de ses pics de puissance d'objets.
 5. Contrôler les zones autour des objectifs.
-6. Transformer les combats gagnés en camps, tours ou objectifs neutres.
+6. Transformer ses avantages en camps, tours ou objectifs neutres.
 
 **Ses principales conditions de défaite :**
-
 - Forcer des combats avant d'avoir suffisamment de ressources.
 - Utiliser son ultime sans angle d'engagement favorable.
 - Arriver sur un objectif sans Fury.
@@ -44,144 +40,156 @@ Shyvana est particulièrement efficace lorsqu'elle peut enchaîner ses attaques 
 
 # Build et runes
 
-> Build basé sur le guide MOBAFire de Oikaton, mis à jour le 20 novembre 2026. Les recommandations sont à réévaluer lors des prochains patchs.
+> Build basé sur le guide MOBAFire de Oikaton, consulté le 20 novembre 2026. Les recommandations sont à réévaluer lors des prochains patchs.
 
-## Runes
+## Runes principales : Conqueror
 
-Le guide présente deux orientations principales : Conquérant pour les combats prolongés et Attaque soutenue pour les compositions plus fragiles.
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Precision_icon.png" alt="Precision" width="36" height="36" />
 
-### Page principale : Conquérant
+**Precision**
 
-**Précision**
-- Conquérant
-- Triomphe
-- Légende : accélération
-- Baroud d'honneur
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Conqueror_rune.png" alt="Conqueror" width="32" height="32" /> **Conqueror**
 
-**Inspiration**
-- Chaussures magiques
-- Triple tonic
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Triumph_rune.png" alt="Triumph" width="32" height="32" /> **Triumph**
 
-Cette page est présentée dans le corps du guide comme la recommandation principale. Conquérant apporte davantage de valeur dans les combats prolongés grâce à ses dégâts soutenus et à ses soins.
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Legend-_Haste_rune.png" alt="Legend: Haste" width="32" height="32" /> **Legend: Haste**
 
-### Alternative : Attaque soutenue
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Last_Stand_rune.png" alt="Last Stand" width="32" height="32" /> **Last Stand**
 
-**Précision**
-- Attaque soutenue
-- Triomphe
-- Légende : accélération
-- Coup de grâce
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Inspiration_icon.png" alt="Inspiration" width="36" height="36" />
 
 **Inspiration**
-- Savoir cosmique
-- Chaussures magiques
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Magical_Footwear_rune.png" alt="Magical Footwear" width="32" height="32" /> **Magical Footwear**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Triple_Tonic_rune.png" alt="Triple Tonic" width="32" height="32" /> **Triple Tonic**
+
+Cette page est présentée dans le corps du guide comme la recommandation principale.
+
+Conqueror apporte davantage de valeur dans les combats prolongés grâce à ses dégâts soutenus et à ses soins.
+
+## Runes alternatives : Press the Attack
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Precision_icon.png" alt="Precision" width="36" height="36" />
+
+**Precision**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Press_the_Attack_rune.png" alt="Press the Attack" width="32" height="32" /> **Press the Attack**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Triumph_rune.png" alt="Triumph" width="32" height="32" /> **Triumph**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Legend-_Haste_rune.png" alt="Legend: Haste" width="32" height="32" /> **Legend: Haste**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Coup_de_Grace_rune.png" alt="Coup de Grace" width="32" height="32" /> **Coup de Grace**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Inspiration_icon.png" alt="Inspiration" width="36" height="36" />
+
+**Inspiration**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Cosmic_Insight_rune.png" alt="Cosmic Insight" width="32" height="32" /> **Cosmic Insight**
+
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Magical_Footwear_rune.png" alt="Magical Footwear" width="32" height="32" /> **Magical Footwear**
 
 À privilégier contre des compositions fragiles lorsque les combats ont tendance à se terminer rapidement.
 
-L'enchaînement attaque automatique → Q permet d'activer rapidement Attaque soutenue.
+L'enchaînement attaque automatique → Q permet d'activer rapidement Press the Attack.
 
-### Variante défensive
+## Variante défensive
 
-Le guide affiche également une variante avec :
+**Precision**
+- Press the Attack
+- Triumph
+- Legend: Haste
+- Coup de Grace
 
-**Précision**
-- Attaque soutenue
-- Triomphe
-- Légende : accélération
-- Coup de grâce
+**Resolve**
 
-**Résolution**
-- Conditionnement
-- Inébranlable
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Conditioning_rune.png" alt="Conditioning" width="32" height="32" /> **Conditioning**
 
-Cette page peut être envisagée lorsque la survie et la résistance aux contrôles sont particulièrement importantes.
+<img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Unflinching_rune.png" alt="Unflinching" width="32" height="32" /> **Unflinching**
 
-**Fragments**
-- Vitesse d'attaque
-- Force adaptative
-- PV supplémentaires évolutifs
+Cette variante peut être envisagée lorsque la survie et la résistance aux contrôles sont particulièrement importantes.
 
-> Note : le résumé de runes en haut de la page MOBAFire affiche Attaque soutenue comme page standard, tandis que son analyse détaillée recommande Conquérant comme choix principal. Je conserve cette distinction plutôt que de masquer cette incohérence.
+## Fragments
+
+- Attack Speed
+- Adaptive Force
+- Scaling Health
 
 ## Sorts d'invocateur
 
-- **Châtiment**
-- **Saut éclair**
+- **Smite**
+- **Flash**
 
 ## Compagnon de jungle
 
 Le guide recommande **Mosstomper**, pour sa sécurité supplémentaire.
 
-Cette protection est particulièrement intéressante depuis les ajustements qui ont réduit la tolérance de Shyvana aux mauvaises entrées en combat.
+Cette protection est particulièrement intéressante lorsque Shyvana doit rester au contact de ses adversaires.
 
 ## Build principal
 
 <text>Ordre de référence présenté dans le guide :</text>
 
-1. Tueur de krakens
-2. Jambières gloutonnes
-3. Aube et crépuscule
-4. Ciel éventré
-5. Jak'Sho le Protéiforme
-6. Visage de Sterak
+1. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Kraken_Slayer_item.png" alt="Kraken Slayer" width="32" height="32" /> **Kraken Slayer**
+2. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Gluttonous_Greaves_item.png" alt="Gluttonous Greaves" width="32" height="32" /> **Gluttonous Greaves**
+3. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Dusk_and_Dawn_item.png" alt="Dusk and Dawn" width="32" height="32" /> **Dusk and Dawn**
+4. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Sundered_Sky_item.png" alt="Sundered Sky" width="32" height="32" /> **Sundered Sky**
+5. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Jak'Sho,_The_Protean_item.png" alt="Jak'Sho, The Protean" width="32" height="32" /> **Jak'Sho, The Protean**
+6. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Sterak's_Gage_item.png" alt="Sterak's Gage" width="32" height="32" /> **Sterak's Gage**
 
-![Tueur de krakens](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/item/6672.png)
-![Ciel éventré](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/item/6610.png)
-![Jak'Sho le Protéiforme](https://ddragon.leagueoflegends.com/cdn/16.23.1/img/item/ JakShoTheProtean.png)
+Kraken Slayer constitue le premier gros pic de puissance. Il fonctionne particulièrement bien avec les attaques automatiques, le Q et les combats prolongés.
 
-Le Tueur de krakens constitue le premier gros pic de puissance. Il fonctionne particulièrement bien avec les attaques automatiques, le Q et les combats prolongés.
+Dusk and Dawn apporte une transition vers davantage de résistance et de pression en combat.
 
-Aube et crépuscule apporte une transition vers davantage de résistance et de pression en combat.
+Sundered Sky est une option intéressante pour renforcer la tenue des combats et la récupération.
 
-Ciel éventré est une option intéressante pour renforcer la tenue des combats et la récupération.
+Jak'Sho, The Protean et Sterak's Gage complètent le build avec davantage de résistance et de survie.
 
-Jak'Sho et Visage de Sterak complètent le build avec davantage de résistance et de survie.
+## Variante : Trinity Force
 
-### Variante : Force de la trinité
+1. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Trinity_Force_item.png" alt="Trinity Force" width="32" height="32" /> **Trinity Force**
+2. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Gluttonous_Greaves_item.png" alt="Gluttonous Greaves" width="32" height="32" /> **Gluttonous Greaves**
+3. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Spear_of_Shojin_item.png" alt="Spear of Shojin" width="32" height="32" /> **Spear of Shojin**
+4. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Riftmaker_item.png" alt="Riftmaker" width="32" height="32" /> **Riftmaker**
+5. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Sterak's_Gage_item.png" alt="Sterak's Gage" width="32" height="32" /> **Sterak's Gage**
+6. <img src="https://wiki.leagueoflegends.com/en-us/Special:Redirect/file/Jak'Sho,_The_Protean_item.png" alt="Jak'Sho, The Protean" width="32" height="32" /> **Jak'Sho, The Protean**
 
-Le guide propose également une orientation alternative :
+Le guide propose également une variante avec **Experimental Hexplate** à la place de Spear of Shojin.
 
-1. Force de la trinité
-2. Jambières gloutonnes
-3. Lance de Shojin
-4. Créateur de failles
-5. Visage de Sterak
-6. Jak'Sho le Protéiforme
+## Objets situationnels
 
-Une seconde variante remplace notamment la Lance de Shojin par la Ceinture-éclair expérimentale et adapte les derniers achats.
-
-### Builds situationnels
-
-| Situation | Adaptation proposée |
+| Situation | Objets |
 |---|---|
-| Composition avec beaucoup de dégâts physiques | Coques en acier, Danse de la mort, Présage de Randuin |
-| Plusieurs tanks adverses | Couperet noir, Hydra titanesque |
-| Besoin de dégâts prolongés hybrides | Créateur de failles, Tourment de Liandry, Fléau des hématites |
-| Burst magique ou pick | Gueule de Malmortius ou Jak'Sho |
-| Besoin de davantage de résistance | Force de la nature, Visage spirituel |
-| Beaucoup de soins adverses | Armure épineuse si Shyvana est le meilleur porteur de l'anti-soin |
+| Beaucoup de dégâts physiques | Plated Steelcaps, Death's Dance, Randuin's Omen |
+| Plusieurs tanks adverses | Black Cleaver, Titanic Hydra |
+| Besoin de dégâts prolongés hybrides | Riftmaker, Liandry's Torment, Nashor's Tooth |
+| Burst magique ou pick | Maw of Malmortius ou Jak'Sho, The Protean |
+| Besoin de résistance magique | Force of Nature, Spirit Visage |
+| Beaucoup de soins adverses | Thornmail |
 
 ### Choix des bottes
 
-- **Jambières gloutonnes :** choix offensif et de référence dans le build.
-- **Coques en acier :** contre les dégâts physiques et les champions basés sur les attaques automatiques.
-- **Sandales de Mercure :** contre les contrôles nombreux et les dégâts magiques.
+- **Gluttonous Greaves :** choix offensif et de référence dans le build.
+- **Plated Steelcaps :** contre les dégâts physiques et les champions basés sur les attaques automatiques.
+- **Mercury's Treads :** contre les contrôles nombreux et les dégâts magiques.
 
 # Compétences
 
-## Règles générales
+## Ordre de compétences
 
-La priorité de compétences proposée est :
+Le guide présente le départ suivant :
 
-**Départ Q → E → W, puis maximisation du Q.**
+**Q → E → W**, puis maximisation du Q.
 
-Le Q constitue le cœur des dégâts sur cible unique et permet d'enchaîner les attaques.
+- **Q :** cœur des dégâts sur cible unique et permet d'enchaîner les attaques.
+- **E :** essentiel pour engager à distance et ralentir une cible.
+- **W :** apporte un bouclier et permet de rester au contact.
+- **R :** permet de transformer la Fury accumulée en présence sur la carte.
 
-Le E est essentiel pour engager à distance et ralentir une cible. Le guide insiste sur son importance : rater le E rend beaucoup plus difficile le fait de rester au contact.
+Le E est particulièrement important : le rater rend beaucoup plus difficile le fait de rester au contact.
 
-Le W apporte un bouclier et permet de rester au contact. Il faut choisir son timing plutôt que de le lancer automatiquement dès le début d'un combat.
-
-L'ultime convertit la Fury accumulée en présence sur la carte. Il faut l'utiliser pour exploiter une situation favorable, et non pour tenter de créer artificiellement un combat.
+Il faut choisir le timing du W plutôt que de le lancer automatiquement dès le début d'un combat.
 
 ## Gestion de la Fury
 
@@ -189,12 +197,12 @@ La Fury est une ressource à préparer avant les affrontements importants.
 
 | État de la Fury | Décision |
 |---|---|
-| 0 à 60 | Continuer à farmer si aucun objectif ne nécessite une intervention |
-| 80 à 100 | Commencer à se positionner pour un combat ou un objectif |
-| Forme de dragon presque terminée | Sortir du combat, sécuriser l'objectif ou terminer la cible accessible |
-| Ultime disponible mais lanes incapables de suivre | Ne pas forcer ; continuer le farm ou jouer de l'autre côté de la carte |
+| Fury basse | Continuer à farmer si aucun objectif ne nécessite une intervention |
+| Fury proche du maximum | Commencer à se positionner pour un combat ou un objectif |
+| Forme de dragon disponible | Exploiter une situation favorable |
+| Ultime indisponible | Continuer à farmer ou jouer de l'autre côté de la carte |
 
-**La règle d'or :** avoir sa forme de dragon disponible ne signifie pas qu'il faut immédiatement l'utiliser.
+**Avoir sa forme de dragon disponible ne signifie pas qu'il faut immédiatement l'utiliser.**
 
 Elle doit permettre de gagner un combat, de sécuriser un objectif, de prendre une tour ou de provoquer un reset avantageux.
 
@@ -202,17 +210,17 @@ Elle doit permettre de gagner un combat, de sécuriser un objectif, de prendre u
 
 Shyvana ne nécessite pas des enchaînements particulièrement complexes. L'essentiel est de maintenir une bonne disponibilité d'attaques automatiques et de choisir le bon moment pour utiliser ses compétences.
 
-## Combo 1 : échange humain avec Attaque soutenue
+## Combo 1 : échange humain avec Press the Attack
 
 **Utilisation :** escarmouches précoces, combats dans la rivière, petits ganks.
 
-1. Toucher le E pour ralentir la cible.
+1. Toucher E pour ralentir la cible.
 2. Approcher et placer une attaque automatique.
 3. Utiliser Q pour réinitialiser l'attaque.
 4. Utiliser W pour absorber la riposte et rester au contact.
 5. Continuer les attaques automatiques.
 
-L'enchaînement attaque automatique → Q permet de déclencher rapidement Attaque soutenue.
+L'enchaînement attaque automatique → Q permet de déclencher rapidement Press the Attack.
 
 ## Combo 2 : entrée contre une cible mobile
 
@@ -224,7 +232,7 @@ L'enchaînement attaque automatique → Q permet de déclencher rapidement Attaq
 4. Enchaîner attaque automatique → Q.
 5. Garder W pour absorber la riposte.
 
-Si le E est raté, il faut réévaluer le combat. Sans ralentissement, il devient beaucoup plus difficile de rester au contact.
+Si E est raté, il faut réévaluer le combat. Sans ralentissement, il devient beaucoup plus difficile de rester au contact.
 
 ## Combo 3 : combat front-to-back en forme de dragon
 
@@ -280,34 +288,26 @@ Si une lane ne présente pas une opportunité évidente, il vaut mieux continuer
 
 ## Route côté rouge
 
-Route standard proposée :
-
-1. Rouge
+1. Red Buff
 2. Krugs
 3. Raptors
-4. Loups
-5. Bleu
+4. Wolves
+5. Blue Buff
 6. Gromp
 
 Cette route permet de réaliser un full clear stable et de préparer son prochain timing.
 
-Elle est particulièrement adaptée lorsque les lanes sont instables ou qu'aucune intervention n'est évidente avant le premier passage en rivière.
-
 ## Route côté bleu
 
-Route standard proposée :
-
-1. Bleu
+1. Blue Buff
 2. Gromp
-3. Loups
+3. Wolves
 4. Vérification mid/top
 5. Raptors
-6. Rouge
+6. Red Buff
 7. Krugs
 
 Cette route permet de surveiller le côté supérieur de la carte tout en conservant une base de full clear.
-
-Ne pas inventer un gank si aucune opportunité ne se présente.
 
 ## Gank en trois camps
 
@@ -316,7 +316,7 @@ Un départ en trois camps peut être intéressant lorsque l'état des lanes le p
 Conditions favorables :
 
 - La lane possède un contrôle important.
-- L'adversaire n'a plus son Saut éclair.
+- L'adversaire n'a plus son Flash.
 - La cible est suffisamment avancée.
 - Le jungler adverse ne peut pas facilement punir cette intervention.
 
@@ -327,23 +327,6 @@ Conditions défavorables :
 - Le jungler adverse possède un meilleur potentiel de combat précoce.
 
 Dans ce cas, terminer son clear reste préférable.
-
-## Repères de timing
-
-Les repères suivants sont ceux indiqués dans le guide MOBAFire. Ils doivent être adaptés à la partie et aux éventuelles modifications des timers.
-
-| Timing | Objectif |
-|---|---|
-| 0:55 | Apparition des premiers camps |
-| 1:07 | Apparition des Krugs et du Gromp |
-| 2:55 | Apparition du Carapateur |
-| 2:55-3:10 | Objectif de full clear |
-| 4:30-5:00 | Fenêtre de préparation du premier dragon |
-| 6:00+ | Niveau 6 et premiers combats avec la forme |
-| 8:00 | Apparition des Larves du Néant |
-| 15:00 | Le Héraut remplace les Larves |
-
-Le guide vise également un premier retour à la base autour de 1100 à 1400 PO.
 
 # Jungle tracking et lecture de la carte
 
@@ -395,7 +378,7 @@ Avant de commencer le dragon, plusieurs conditions doivent être réunies :
 
 Si ces conditions ne sont pas réunies, il vaut mieux continuer à farmer, poser de la vision ou jouer sur le côté opposé de la carte.
 
-**Ne pas commencer un dragon simplement parce que Shyvana est particulièrement efficace contre les monstres.**
+**Ne pas commencer un dragon simplement parce que Shyvana est efficace contre les monstres.**
 
 ## Préparer un objectif à l'avance
 
@@ -414,7 +397,7 @@ La vidéo insiste sur l'importance de contrôler les entrées d'une zone avant u
 
 Il faut :
 
-- Placer une balise de contrôle.
+- Placer une Control Ward.
 - Éliminer les wards adverses.
 - Se positionner dans le brouillard de guerre.
 - Forcer les adversaires à vérifier eux-mêmes les accès.
@@ -443,7 +426,7 @@ Priorités :
 
 - Terminer ses clears à temps.
 - Éviter les combats forcés dans la rivière.
-- Accumuler les effets de la passive.
+- Accumuler de la Fury.
 - Chercher uniquement les ganks réellement favorables.
 - Préparer le premier dragon avec la priorité des lanes.
 
@@ -455,8 +438,6 @@ En cas de kill précoce, le convertir immédiatement en camps, plaques, vision, 
 
 **Objectif : exploiter les pics de puissance et contrôler les objectifs.**
 
-C'est une période particulièrement importante pour Shyvana.
-
 Priorités :
 
 - Jouer autour de la forme de dragon.
@@ -466,15 +447,9 @@ Priorités :
 
 Éviter de rester au mid sans objectif, d'ignorer les camps latéraux ou de traverser toute la frontline pour toucher un carry.
 
-Si Shyvana est en avance, elle peut contrôler les lignes de vision et les passages étroits pour obliger l'équipe adverse à entrer dans sa zone de menace.
-
-Si elle est derrière, il faut privilégier les combats front-to-back et acheter de quoi survivre à la première riposte.
-
 ## Late game : 28 minutes et plus
 
 **Objectif : ne pas perdre la partie sur une mauvaise entrée.**
-
-Les combats sont plus dangereux et une mauvaise utilisation de la forme peut coûter la partie.
 
 Priorités :
 
@@ -492,11 +467,7 @@ Ne pas poursuivre une cible lorsque la forme de dragon est sur le point de se te
 
 # Matchups
 
-Le guide MOBAFire classe les matchups en plusieurs catégories : counters difficiles, matchups défavorables, matchups équilibrés et champions contre lesquels Shyvana peut exploiter son tempo.
-
-La liste des noms de champions n'étant pas correctement récupérée dans le contenu textuel de la page, je préfère ne pas reconstruire cette liste à partir de suppositions.
-
-Les règles de lecture proposées sont néanmoins très utiles.
+Les matchups dépendent notamment de la capacité de l'adversaire à envahir, à gagner les combats précoces ou à kite Shyvana.
 
 ## Principes généraux
 
